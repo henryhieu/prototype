@@ -1,10 +1,12 @@
-<?php $current = 'home'; ?>
 <!DOCTYPE html>
-<html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<!--[if IE 8]><html lang="ja" class="ie8 no-js" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><![endif]-->
+<!--[if IE 9]><html lang="ja" class="ie9 no-js" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" class="no-js"><!--<![endif]-->
 <head>
 <meta charset="UTF-8">
-<title>ニッショープロトタイプ例</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>ニッショー|ここにタイトルが入ります。</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="★★★">
 <meta name="keywords" content="★★★">
 <meta property="og:title" content="★★★">
@@ -13,71 +15,195 @@
 <meta property="og:url" content="★★★">
 <meta property="og:image" content="★★★">
 <meta property="og:site_name" content="★★★">
-<link href="common/css/style.css" rel="stylesheet" media="all">
-<script src="common/js/jquery.min.js"></script>
-<script src="common/js/scripts.js"></script>
+<link href="/common/css/style.css" rel="stylesheet" media="all">
+<script src="/common/js/scripts.js"></script>
+<!--[if lt IE 9]>
+<script src="/common/js/html5shiv.js" charset="Shift_JIS"></script>
+<![endif]-->
 </head>
 <body class="prototype">
 	<div id="l-document">
-		<div id="l-container">
-			<div id="l-header">
-				<div class="l-header__inner">
-					<h1 class="hdg-logo">
-						<a href="#" class="visible"><img src="common/images/logo.png" alt="" width="162" height="65"></a>
-						<a href="#" class="visible-scroll"><img src="common/images/logo-scroll.png" alt="" width="162" height="30"></a>
-					</h1>
-					<div class="nav-global">
-						<ul class="nav-global__inner">
-							<li><a href="/" class="js-current">企業方針</a></li>
-							<li><a href="#">グループ会社</a></li>
-							<li><a href="#">お知らせ</a></li>
-							<li><a href="#">メディア情報</a></li>
-							<li><a href="#">採用情報</a></li>
-						</ul>
-					</div>
-					<p class="btn"><a href="#"><img src="common/images/btn-img.png" alt="" width="282" height="71"></a></p>
+		<div class="link-external">
+			<a href="#" class="link-external__container">
+				<p class="link-external__txt icn-link">家賃情報サイトはこちらから</p>
+				<p class="link-external__img"><img src="/common/images/pct-index-link.png" alt="" class="fluid-image"></p>
+			</a>
+			<a href="#0" class="btn-close icn-link">close</a>
+		</div>
+		<div id="l-header" role="banner">
+			<div class="l-header__top">
+				<h1 class="hdg-logo">
+					<a href="/" class="visible-pc"><img src="/common/images/logo.png" alt="" width="162" height="30"></a>
+					<a href="/" class="visible-sp"><img src="/common/images/logo-sp.png" alt="" class="fluid-image"></a>
+				</h1>
+				<div class="nav-global">
+					<ul class="nav-global__inner">
+						<li><a href="/" class="js-current">企業方針</a></li>
+						<li><a href="#">グループ会社</a></li>
+						<li><a href="#">お知らせ</a></li>
+						<li><a href="#">メディア情報</a></li>
+						<li><a href="#"><i class="fa fa-external-link" aria-hidden="true"></i>採用情報</a></li>
+					</ul>
 				</div>
-			</div><!-- /#l-header -->
-			<div id="l-main">
-				<section class="box-video page">
+				<div class="nav-mobile">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div><!-- /#l-header -->
+		<div id="l-container">
+			<div id="l-main" role="main">
+				<section class="box-video">
 					<video class="bg-video" autoplay loop muted>
-						<source src="resource/movie/prototype.mp4" type="video/mp4">
+						<source src="/resource/movie/movie.mp4" type="video/mp4">
 					</video>
-					<div class="box-video__inner--content">
-						<h2 class="hdg-lv2">東海で賃貸を探しているなら、ニッショーで。</h2>
-						<p class="txt-normal">ああああああああああああああああああああああああああああああ<br>あああああああああああああああああああ</p>
-					</div>
-					<div class="box-video__bg">
+					<div class="box-video__intro">
+						<h2 class="hdg-lv2">賃貸を検索するなら。ニッショー</h2>
+						<p class="txt-normal">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 					</div>
 					<a href="#box-content" class="scroll-down"><span></span>scroll</a>
 				</section>
-				<section id="box-content" class="box-content page">
+				<div class="box-spirit">
+					<div class="box-spirit__content">
+						<p class="txt-center">ニッショーは創業以来、お客様第一主義を貫いており、<br>何事においてもお客様を最優先に仕事に取り組むことで、<br>実績と信頼を築き上げてきました。</p>
+						<p><a href="#" class="btn btn--blue icn-link icn-link--right">ニッショースピリットを知る</a></p>
+					</div>
+				</div>
+				<div class="box-point">
+					<ul>
+						<li class="js_anchor_expand"><a href="#">
+							<p class="box-point__color box-point__color--01"></p>
+							<p class="box-point__content"><span><img src="/common/images/icn-point01.png" alt=""></span>あああああ</p>
+						</a></li>
+						<li class="js_anchor_expand"><a href="#">
+							<p class="box-point__color box-point__color--02"></p>
+							<p class="box-point__content"><span><img src="/common/images/icn-point02.png" alt=""></span>あああああ</p>
+						</a></li>
+						<li class="js_anchor_expand"><a href="#">
+							<p class="box-point__color box-point__color--03"></p>
+							<p class="box-point__content"><span><img src="/common/images/icn-point03.png" alt=""></span>あああああ</p>
+						</a></li>
+					</ul>
+				</div>
+				<section class="box-news">
 					<div class="wrp-container">
-						<div class="box-content__article">
-							<div class="box-content__article--txt">
-								<h3 class="hdg-lv3"><span>株式会社</span> ニッショー</h3>
-								<p class="txt-normal">東海地区の賃貸住宅仲介会社の“第一人者”として<br>地域に貢献できる価値づくりを進めています。</p>
-								<p class="btn-link"><a href="#" class="btn btn--white">詳しくはこちら</a></p>
+						<div class="box-news__inner">
+							<div class="box-news__title">
+								<h2 class="hdg-lv2"><span class="txt-english">NEWS</span><span>お知らせ</span></h2>
 							</div>
-							<div class="box-content__article--pic js-fullbg"><img src="common/images/pct-img01.png" alt=""></div>
-						</div>
-						<div class="box-content__article">
-							<div class="box-content__article--txt">
-								<h3 class="hdg-lv3"><span>株式会社</span> ニッショー</h3>
-								<p class="txt-normal">東海地区の賃貸住宅仲介会社の“第一人者”として<br>地域に貢献できる価値づくりを進めています。</p>
-								<p class="btn-link"><a href="#" class="btn btn--white">詳しくはこちら</a></p>
+							<div class="box-news__content">
+								<ul>
+									<li class="js_anchor_expand">
+										<p class="txt-time">2015.9.10</p>
+										<p class="txt-title"><a href="#">ああああああああああああああああああああああああああああ</a></p>
+									</li>
+									<li class="js_anchor_expand">
+										<p class="txt-time">2015.9.10</p>
+										<p class="txt-title"><a href="#">ああああああああああああああああああああああああああああ</a></p>
+									</li>
+									<li class="js_anchor_expand">
+										<p class="txt-time">2015.9.10</p>
+										<p class="txt-title"><a href="#">ああああああああああああああああああああああああああああ</a></p>
+									</li>
+								</ul>
+								<p class="txt-more"><a href="#" class="txt-link icn-link icn-link--blue">全てのニュースを見る</a></p>
 							</div>
-							<div class="box-content__article--pic js-fullbg"><img src="common/images/pct-img01.png" alt=""></div>
 						</div>
 					</div>
 				</section>
+				<section class="box-media">
+					<div class="wrp-container">
+						<div class="box-media__inner">
+							<div class="box-media__pict">
+								<img src="/common/images/icon-txt.png" alt="" class="fluid-image">
+							</div>
+							<div class="box-media__txt">
+								<p class="txt-normal">ああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+								<p><a href="#" class="btn btn--blue icn-link icn-link--right">100の「たのしー」を見る</a></p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="box-group">
+					<h2 class="hdg-lv2"><span class="txt-english">GROUP</span><span>グループ会社</span></h2>
+					<ul>
+						<li><a href="#">
+							<p class="box-group__logo box-group__logo--nissho"><img src="/common/images/pct-group-logo-nissho.png" alt=""></p>
+							<p class="box-group__pic"><img src="/common/images/pct-group-nisshojp.png" alt=""></p>
+						</a></li>
+						<li><a href="#">
+							<p class="box-group__logo box-group__logo--nissho"><img src="/common/images/pct-group-logo-nissho.png" alt=""></p>
+							<p class="box-group__pic"><img src="/common/images/pct-group-nisshojp.png" alt=""></p>
+						</a></li>
+						<li><a href="#">
+							<p class="box-group__logo box-group__logo--nissho"><img src="/common/images/pct-group-logo-nissho.png" alt=""></p>
+							<p class="box-group__pic"><img src="/common/images/pct-group-nisshojp.png" alt=""></p>
+						</a></li>
+						<li><a href="#">
+							<p class="box-group__logo box-group__logo--nissho"><img src="/common/images/pct-group-logo-nissho.png" alt=""></p>
+							<p class="box-group__pic"><img src="/common/images/pct-group-nisshojp.png" alt=""></p>
+						</a></li>
+						<li><a href="#">
+							<p class="box-group__logo box-group__logo--nissho"><img src="/common/images/pct-group-logo-nissho.png" alt=""></p>
+							<p class="box-group__pic"><img src="/common/images/pct-group-nisshojp.png" alt=""></p>
+						</a></li>
+						<li><a href="#">
+							<p class="box-group__logo box-group__logo--nissho"><img src="/common/images/pct-group-logo-nissho.png" alt=""></p>
+							<p class="box-group__pic"><img src="/common/images/pct-group-nisshojp.png" alt=""></p>
+						</a></li>
+					</ul>
+				</section>
+				<p class="page-top"><a href="#top" id="page-top" class="icn-link"><span class="icn-link-top">page top</span></a></p>
 			</div><!-- /#l-main -->
-			<div id="l-footer">
-				<div class="wrp-container">
-					<p class="txt-copyright"><small>Copyright nissho &copy;2016</small></p>
-				</div>
-			</div><!-- /#l-footer -->
 		</div><!-- /#l-container -->
+		<div id="l-footer" role="linkinfo">
+			<div class="wrp-container">
+				<div class="footer-top">
+					<div class="footer-top__link">
+						<ul>
+							<li><a href="#" class="icn-link icn-link--blue">ああああああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--right">あああああああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--right">あああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--right">ああああああああああ</a></li>
+						</ul>
+					</div>
+					<div class="footer-top__link">
+						<ul>
+							<li><a href="#" class="icn-link icn-link--blue">ああああああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--right">あああああああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--right">あああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--right">ああああああああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--right">ああああああああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--right">ああああああああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--right">ああああああああああ</a></li>
+						</ul>
+					</div>
+					<div class="footer-top__link">
+						<ul>
+							<li><a href="#" class="icn-link icn-link--blue">ああああああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--blue">あああああああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--external">あああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--external">ああああああああああ</a></li>
+							<li><a href="#" class="icn-link icn-link--external">ああああああああああ</a></li>
+						</ul>
+					</div>
+					<div class="footer-top__link footer-top__link--social">
+						<h3 class="hdg-lv3">social media</h3>
+						<ul>
+							<li><a href="#" class="icn-link icn-link--facebook">face</a></li>
+							<li><a href="#" class="icn-link icn-link--twitter">twitter</a></li>
+							<li><a href="#" class="icn-link icn-link--instagram">instagram</a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="txt-copyright"><small>Copyright&copy;Nissho Co.Ltd.All right Reserved.</small></p>
+			</div>
+		</div><!-- /#l-footer -->
 	</div><!-- /#l-document -->
+	<script src="https://use.fontawesome.com/a3fa8e18ad.js"></script>
 </body>
 </html>
